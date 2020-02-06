@@ -6,13 +6,17 @@ import java.util.Scanner;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
  * @author mason
  */
 public class TaxCalculator {
+
     public static void main(String[] args) {
-        Scanner keyboard = new Scanner (System.in);
+        Scanner keyboard = new Scanner(System.in);
+
+        System.out.println("How much does the item cost?");
+        int cost = keyboard.nextInt();
     }
+
 }
