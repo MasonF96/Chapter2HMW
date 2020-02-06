@@ -15,8 +15,31 @@ public class TaxCalculator {
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
 
+        //Prompt user for price.
         System.out.println("How much does the item cost?");
-        int cost = keyboard.nextInt();
+
+        //Get price from use.
+        double cost = keyboard.nextInt();
+
+        //Calculate state tax
+        double statetaxtotal = cost * 0.02;
+
+        //Output State tax
+        System.out.println("State tax for purchase: " + statetaxtotal);
+
+        //Calculate county tax
+        double countytaxtotal = cost * 0.04;
+
+        //Outpux county tax
+        System.out.println("County tax for purchase: " + countytaxtotal);
+        
+        //Calculate Total sales tax
+        double totalsalestax = cost + statetaxtotal + countytaxtotal;
+        
+        //Output total sales tax
+        System.out.println("Total for the transastion is: " + totalsalestax);
+        
+                
     }
 
 }
